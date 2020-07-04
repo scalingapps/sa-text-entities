@@ -21,7 +21,7 @@ export interface MentionEntityInterface {
 }
 
 export interface ImageEntityInterface {
-	image: string
+	url: string
 	indices: number[]
 }
 
