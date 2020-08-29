@@ -1,5 +1,1 @@
-import { SaTextEntities } from './SaTextEntities'
-
-export = {
-	SaTextEntities: SaTextEntities
-}
+export * from './SaTextEntities'

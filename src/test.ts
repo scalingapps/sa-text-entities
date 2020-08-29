@@ -2,7 +2,7 @@ import {
 	EntitiesInfo,
 	SaTextEntities 
 } from './SaTextEntities'
-const saTextEntities = new SaTextEntities()
+
 
 const text: string = `Want to get better at interviews from both sides of the table? 
 (interview & interviewer's perspective)
@@ -16,7 +16,7 @@ this is a #hashatg and #another
  https://frontendmasters.com/courses/image.jpg
 `
 
-saTextEntities.extractEntities(text)
+SaTextEntities.extractEntities(text)
 	.then((entities: EntitiesInfo) => {
 		console.log(entities)
 	})

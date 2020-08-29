@@ -45,7 +45,7 @@ export interface SaTextEntitiesInterface {
 	extractEntities(text: string): Promise<EntitiesInfo>
 }
 
-export class SaTextEntities implements SaTextEntitiesInterface {
+export class SaTextEntitiesClass implements SaTextEntitiesInterface {
 	private getMessageFromException(e: any){
 		if (!e) {
 			return 'unknown exception';
@@ -157,3 +157,5 @@ export class SaTextEntities implements SaTextEntitiesInterface {
 		})
 	}
 }
+
+export const SaTextEntities: SaTextEntitiesClass = new SaTextEntitiesClass()
